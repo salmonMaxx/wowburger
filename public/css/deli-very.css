@@ -38,6 +38,6 @@ body {
 	position: absolute;
 	z-index: 2;
 	color:black;
-	background: rgba(255,255,255, 0.5);
+	background: rgba(255,255,153, 0.5);
 	padding: 1em;
 }

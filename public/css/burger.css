@@ -1,0 +1,139 @@
+/*
+    Kunde inte riktigt hitta webpage/css mappen för att lägga in reset-filen
+    men ha en reset.css url importerad - kanske duger?
+*/
+
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Share+Tech+Mono");
+
+
+#head-and-image{
+    max-height: 200px;
+    overflow: hidden;
+}
+
+body {
+    font-family: "Droid Serif", sans-serif;
+    font-size: 12pt;
+}
+
+#top-image{
+    width: 100%;
+    overflow: hidden;
+}
+
+#greeting-button{
+    margin-left: 1em;
+}
+
+h1 {
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    margin-left: 1.5em;
+    text-decoration: underline overline wavy black;
+}
+
+a, strong, em {
+    color: #0099ff;
+}
+
+p.info,
+#login p {
+    width: 80%;
+    margin: 1vw auto;
+}
+
+.allergen {
+    font-weight: bold
+}
+
+#burgertable {
+    background-color: rgb(0, 0, 0);
+    color: rgb(250,250,250);
+    border: 20px solid teal;
+    border-left: 20px outset teal;
+    border-right: 20px inset teal;
+}
+
+#the-top{
+    position: absolute;
+}
+
+button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+table{
+    margin: auto;
+    width: 70%;
+}
+
+#indenter{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 20px inset teal;
+    border-top: 20px outset teal;
+    border-left: 20px outset teal;
+}
+
+#order{
+    margin: 1em;
+}
+
+#burgerList{
+    color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.burgerWrapper{ /*ha ha ha get it???*/
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-evenly;
+}
+
+#orderButton{
+  width: 160px;
+  height: 40px;
+}
+#orderButtonImage{
+  max-width: 100%;
+  height: 100%;
+}
+
+.burgerSlot{
+    margin: 2em;
+    max-width: 260px;
+    max-height: 160px;
+}
+
+.menuImage{
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#orderInfo{
+    margin: 1em;
+
+
+}
