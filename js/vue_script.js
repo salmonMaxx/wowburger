@@ -18,6 +18,7 @@ var vm = new Vue({
           showOrder: false,
           orders: {},
           details: {},
+          idOfOrder: 0,
           location: {x:"", y:""},
       },
       created: function () {
@@ -55,14 +56,18 @@ var vm = new Vue({
             return lastOrder + 1;
           },
 
+          getTheId: function (){
+            return this.idOfOrder++
+          },
+
           addOrder: function () {
             //var orderino = this.orderPlaced();
-            socket.emit("addOrder", { orderId: this.getNext(),
-                                      details: {x: this.location.x,
-                                                y: this.location.y},
-                                      orderItems: this.currentOrder ,
+            socket.emit("addOrder", { orderId: this.getTheId(),
+                                      details: {x: this.location.x, y: this.location.y},
+                                      orderItems: [this.currentOrder, ""+this.fullName]
                                       }
-                                    )},
+                                    )
+                    },
           displayOrder: function(event){
             var offset = {x: event.currentTarget.getBoundingClientRect().left,
             y: event.currentTarget.getBoundingClientRect().top};
